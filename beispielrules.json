@@ -1,0 +1,149 @@
+
+[
+  {
+    "pattern": "mein name ist *",
+    "template": "Hallo <set name=\"username\"><star/></set>! Ich werde mir deinen Namen merken."
+  },
+  {
+    "pattern": "ich heisse *",
+    "template": "Verstanden, <set name=\"username\"><star/></set>."
+  },
+  {
+    "pattern": "nenne mich *",
+    "template": "Okay, ich werde dich von nun an <set name=\"username\"><star/></set> nennen."
+  },
+  {
+    "pattern": "wie ist mein name",
+    "template": "Du hast mir gesagt, dein Name sei <get name=\"username\"/>."
+  },
+  {
+    "pattern": "wie heisse ich",
+    "template": "Dein Name ist <get name=\"username\"/>, oder?"
+  },
+  {
+    "pattern": "wer bin ich",
+    "template": "Soweit ich weiß, bist du <get name=\"username\"/>."
+  },
+  {
+    "pattern": "hallo",
+    "template": "Hallo! Wie kann ich dir helfen?"
+  },
+  {
+    "pattern": "hey",
+    "template": "Hey! Was liegt dir auf dem Herzen?"
+  },
+  {
+    "pattern": "wie geht es dir",
+    "template": "Mir geht es gut, danke! Ich bin bereit, dir bei deinen Fragen zu helfen."
+  },
+  {
+    "pattern": "wer bist du",
+    "template": "Ich bin <bot name=\"name\"/>."
+  },
+  {
+    "pattern": "wie heisst du",
+    "template": "Mein Name ist <bot name=\"name\"/>."
+  },
+  {
+    "pattern": "wer hat dich erschaffen",
+    "template": "Ich wurde von <bot name=\"master\"/> erschaffen."
+  },
+  {
+    "pattern": "wer hat dich gemacht",
+    "template": "Ich wurde von <bot name=\"master\"/> gemacht."
+  },
+  {
+    "pattern": "was ist dein zweck",
+    "template": "Mein Zweck ist es, <bot name=\"purpose\"/>."
+  },
+  {
+    "pattern": "wo bist du",
+    "template": "Ich befinde mich in <bot name=\"location\"/>."
+  },
+  {
+    "pattern": "wann wurdest du geboren",
+    "template": "Mein Geburtstag ist am <bot name=\"birthdate\"/>."
+  },
+  {
+    "pattern": "danke",
+    "template": "Gern geschehen!"
+  },
+  {
+    "pattern": "tschüss",
+    "template": [
+      "Bis bald!",
+      "Tschüss!",
+      "Auf Wiedersehen!"
+    ]
+  },
+  {
+    "pattern": "was weisst du",
+    "template": "Ich kann dir viele Fragen beantworten. Frag mich zum Beispiel nach der Hauptstadt eines Landes oder einfach, was du wissen möchtest. Du kannst mir auch eigenes Wissen beibringen, indem du in den Einstellungen Wissens-Sets hochlädst."
+  },
+  {
+    "pattern": "was kannst du tun",
+    "template": "Ich kann Fragen beantworten, die auf vordefinierten Regeln basieren, oder komplexere Anfragen an die Gemini API weiterleiten. Ich kann dir auch die Uhrzeit sagen, Bilder generieren oder dein eigenes Wissen nutzen, das du mir in den Einstellungen beibringst."
+  },
+  {
+    "pattern": "wie spät ist es",
+    "template": "Es ist <date format=\"%H:%M\"/> Uhr."
+  },
+  {
+    "pattern": "welcher tag ist heute",
+    "template": "Heute ist <date format=\"%A, der %d. %B %Y\"/>."
+  },
+  {
+    "pattern": "was ist die hauptstadt von *",
+    "template": "Die Hauptstadt von <star index=\"1\"/> ist <map name=\"capitals\"><star index=\"1\"/></map>."
+  },
+  {
+    "pattern": "kennst du die hauptstadt von *",
+    "template": "Ja, die Hauptstadt von <star index=\"1\"/> ist <map name=\"capitals\"><star index=\"1\"/></map>."
+  },
+  {
+    "pattern": "was ist die hauptstadt",
+    "template": "Möchtest du die Hauptstadt eines Landes wissen?"
+  },
+  {
+    "pattern": "ja",
+    "that": "Möchtest du die Hauptstadt eines Landes wissen?",
+    "template": "Okay, von welchem Land?"
+  },
+  {
+    "pattern": "nein",
+    "that": "Möchtest du die Hauptstadt eines Landes wissen?",
+    "template": "Okay, frag mich einfach etwas anderes."
+  },
+  {
+    "pattern": "was ist der ländercode für *",
+    "template": "Der Ländercode für <star/> ist <map name=\"laender-codes\"><star/></map>."
+  },
+  {
+    "pattern": "ist * ein staat",
+    "type": "setCheck",
+    "item": "<star index=\"1\"/>",
+    "set": "Staaten",
+    "template_yes": "Ja, laut meiner Wissensdatenbank ist {item} ein Staat.",
+    "template_no": "Nein, ich habe keinen Eintrag für '{item}' in meiner Liste von Staaten."
+  },
+  {
+    "pattern": "ist * ein *",
+    "type": "setCheck",
+    "item": "<star index=\"1\"/>",
+    "set": "<star index=\"2\"/>",
+    "template_yes": "Ja, laut meiner Wissensdatenbank ist {item} ein {set}.",
+    "template_no": "Nein, {item} ist laut meiner Wissensdatenbank kein {set}."
+  },
+  {
+    "pattern": "zeig mir ein beispielbild",
+    "template": "Klar, hier ist ein Beispielbild. https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/2010_sonnenblume_%28Helianthus_annuus%29.JPG/330px-2010_sonnenblume_%28Helianthus_annuus%29.JPG"
+  },
+  {
+    "pattern": "zeig mir einen link",
+    "template": "Sicher, hier ist ein Link zu einer nützlichen Ressource: <a href='https://de.wikipedia.org' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'>Wikipedia</a>"
+  },
+  {
+    "pattern": "zeig mir die flagge von *",
+    "template": "Hier ist die Flagge von <star/>: <map name=\"flags\"><star/></map>"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "categories": [
+    {
+      "pattern": "HALLO",
+      "template": "Hallo! Wie kann ich dir helfen?"
+    },
+    {
+      "pattern": "HI",
+      "template": "Hi! Was liegt dir auf dem Herzen?"
+    },
+    {
+      "pattern": "WIE GEHT ES DIR",
+      "template": "Mir geht es gut, danke der Nachfrage! Ich bin bereit, deine Fragen zu beantworten."
+    },
+    {
+      "pattern": "WIE HEISST DU",
+      "template": "Ich bin ein einfacher Chatbot, der auf vordefinierten Mustern basiert. Du kannst mir einen Namen geben, wenn du möchtest!"
+    },
+    {
+      "pattern": "WAS KANNST DU",
+      "template": "Ich kann auf einfache Fragen antworten, die in meiner Wissensdatenbank hinterlegt sind. Meine Fähigkeiten sind derzeit noch begrenzt."
+    },
+    {
+      "pattern": "WER HAT DICH ERSTELLT",
+      "template": "Ich wurde von einem talentierten Entwickler mit Hilfe von Web-Technologien erstellt."
+    },
+    {
+      "pattern": "TSCHÜSS",
+      "template": "Auf Wiedersehen! Komm bald wieder."
+    },
+    {
+        "pattern": "DANKE",
+        "template": "Gern geschehen!"
+    }
+  ]
+}
