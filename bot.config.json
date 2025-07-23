@@ -1,4 +1,5 @@
 {
+  "rulesFile": "./public/knowledge.json",
   "name": "Alexis",
   "master": "einem talentierten Entwickler",
   "birthdate": "1.1.1990",

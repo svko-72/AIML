@@ -1,0 +1,26 @@
+{
+  "maps": [
+    {
+      "name": "capitals",
+      "path": "./public/capitals.map"
+    },
+    {
+      "name": "personen",
+      "path": "./public/personen.map"
+    },
+    {
+      "name": "flags",
+      "path": "./public/flags.map"
+    }
+  ],
+  "sets": [
+    {
+      "name": "Staaten",
+      "path": "./public/staaten.set"
+    },
+    {
+      "name": "Singvogel",
+      "path": "./public/singvogel.set"
+    }
+  ]
+}
